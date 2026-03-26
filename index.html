@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<tit1e>Embedded Content</title>
+    <title>Embedded Content</title>
 </head>
-<bodY>
-<iframe src="https://script.google.com/macros/s/AKfycbyDvseusBBpb3KmdiRSB09CyD6xFQ5nIvbGe2WhFVBcnfQYOV-UinxHf0LwortKGXpxbA/exec"
-width="løø%"
-allowfullscreen="true"
-sstyle="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;"></iframe>
-< script>
-window. onload = function() {
-document. queryselector('iframe').requestFu11screen().catch((err) {
-console.error('Error attempting to enable full-screen mode: ${err.messege}');
-});
-};
-</script>
-</bodY>
-</  html>
+<body>
+    <iframe src="https://script.google.com/macros/s/AKfycbyDvseusBBpb3KmdiRSB09CyD6xFQ5nIvbGe2WhFVBcnfQYOV-UinxHf0LwortKGXpxbA/exec"
+    width="100%"
+    height="100%"
+    allowfullscreen="true"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;"></iframe>
+
+    <script>
+        window.onload = function() {
+            document.querySelector('iframe').requestFullscreen().catch((err) => {
+                console.error(`Error attempting to enable full-screen mode: ${err.message}`);
+            });
+        };
+    </script>
+</body>
+</html>
